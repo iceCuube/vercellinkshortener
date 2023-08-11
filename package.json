@@ -1,0 +1,15 @@
+{
+  "name": "vercellinkshortener",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.4.9",
+    "@vercel/node": "^2.15.9",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "@vercel/kv": "^0.2.2"
+  }
+}

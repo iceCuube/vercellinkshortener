@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/png" href="/favicon.png" />
+	<style>
+		html {
+			opacity: 0;
+		}
+		
+		@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+		
+		body {
+			color: rgb(240, 240, 240);
+			background-color: rgb(20, 20, 20);
+			font-family: 'Ubuntu Mono', monospace;
+			font-size: 1em;
+			text-align: center;
+		}
+
+		.middle {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+
+			display: flex;
+			align-items: center;
+		}
+
+		.niko {
+			image-rendering: -moz-crisp-edges;
+			image-rendering: -webkit-optimize-contrast;
+			image-rendering: crisp-edges;
+			-ms-interpolation-mode: nearest-neighbor;
+			width: 14rem;
+		}
+		
+		.text {
+			margin-left: 2em;
+		}
+
+		h1 {
+			margin: 0;
+			font-size: 400%;
+		}
+
+		.subh {
+			font-size: 150%;
+		}
+	</style>
+	<title>link shortener</title>
+</head>
+<body>
+	<div class="middle">
+		<img src=" data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABhQTFRFJCQk////AAAAtra2kZGR2trabW1tAAAAi+UwYQAAAAh0Uk5T/////////wDeg71ZAAABw0lEQVR42uzYUZKDIAwAUFhE73/jLkMjgSSgKIGPZjq1ozWvDYigsd/YHoQ94yBh1IAnDM4wG7DWuXeLpA/0FUou0hzgPrEecJfIz/0B7wD3iDWBnKjT5ZmrAPkgmIL+jDUBdznoubMB1xkcoQ24F2IW4F4OXcANCh3ADY4f8AZgzF8j1gHkFEYI78N7/t191weuJfQ+pmvti+A5VAwHjuNKMfwZ3H6afh5QT84BfIFmAaYSPBDC2pB0JpAI+ufD7QiS8EC84VZLNAnAJ8N2fSAnYEKTQ3wZ037ItxaACdw582MYQGUfDkhDXZoQcwB3DBcIZVwKwE3OAbg00Fm1gURIQB4YKDN9u+miACyU0jGaWguAD30lSkFTawHSpMveDL5AugB0tH4AX2a6AL7V0UbmLi+5icvuOh74f5ElRB0Ix/a91sDaQDnEQoNfbV5aFnIlDwbKSww+hS19YFkO1ukHpq0uwE9Z4LKLD47pg0v83TTVatwPBgPSUgg/ApeWKnGqhYulD0gLJ0zUFusp6RzANKL9iIS7WWoBcbBrR2u5vj7QjnnAc+KohA7QT8jdUxcIA0EfsG0rADCYjSGGAx8BBgCFw1dxObejpgAAAABJRU5ErkJggg==" class="niko"/>
+		<div class="text">
+			<h1>link shortener</h1>
+			<div class="subh">sample text</div>
+		</div>
+	</div>
+
+	<style>
+		html {
+			opacity: 1;
+			transition: all 2s ease-in-out;
+		}
+	</style>
+</body>
+</html>

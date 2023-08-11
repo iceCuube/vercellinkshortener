@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/png" href="/favicon.png" />
+	<style>
+		html {
+			opacity: 0;
+		}
+		
+		@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+		
+		body {
+			color: rgb(240, 240, 240);
+			background-color: rgb(20, 20, 20);
+			font-family: 'Ubuntu Mono', monospace;
+			font-size: 1em;
+			text-align: center;
+		}
+
+		.middle {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.joe {
+			image-rendering: -moz-crisp-edges;
+			image-rendering: -webkit-optimize-contrast;
+			image-rendering: crisp-edges;
+			-ms-interpolation-mode: nearest-neighbor;
+			width: 14rem;
+		}
+		
+		.text {
+			margin-top: 1em;
+		}
+
+		h1 {
+			margin: 0;
+			font-size: 400%;
+		}
+
+		.subh {
+			font-size: 150%;
+		}
+	</style>
+	<title>404: No Link</title>
+</head>
+<body>
+	<div class="middle">
+		<img src="/404.png" class="joe"/>
+		<div class="text">
+			<h1>500</h1>
+			<div class="subh">Something went wrong</div>
+		</div>
+	</div>
+
+	<style>
+		html {
+			opacity: 1;
+			transition: all 2s ease-in-out;
+		}
+	</style>
+</body>
+</html>

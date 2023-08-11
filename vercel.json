@@ -1,0 +1,6 @@
+{
+	"routes": [{
+        "src": "/(?<name>[^/]*)",
+        "dest": "api/handler.ts?name=$name"
+    }]
+}
