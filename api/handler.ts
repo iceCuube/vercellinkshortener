@@ -1,7 +1,8 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node'
 import { kv } from "@vercel/kv";
 
-import * as fs from "fs"
+import { readFileSync } from "fs"
+import path from "path"
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
 	const { name } = req.query
@@ -10,12 +11,12 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 		return res.status(400).json({})
 
 	if(name === "")
-		return res.setHeader("Content-Type", "text/html").send(fs.readFileSync("static/index.html"))
+		return res.setHeader("Content-Type", "text/html").send(readFileSync(path.join(process.cwd(), "static", "index.html")))
 	
 	const redirectString = await kv.get<string>(name)
 
 	if(redirectString === null)
-		return res.setHeader("Content-Type", "text/html").send(fs.readFileSync("static/404.html"))
+		return res.setHeader("Content-Type", "text/html").send(readFileSync(path.join(process.cwd(), "static", "404.html")))
 
 	return res.redirect("https://" + redirectString)
 }
